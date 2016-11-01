@@ -28,6 +28,10 @@
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\drawer.xml"
     },
     {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_sports.xml",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_sports.xml"
+    },
+    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_main.xml",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_main.xml"
     }

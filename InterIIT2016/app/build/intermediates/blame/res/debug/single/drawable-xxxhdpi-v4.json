@@ -60,16 +60,24 @@
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable-xxxhdpi-v4\\abc_ic_search_api_mtrl_alpha.png"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_drawer.png",
-        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_drawer.png"
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\mouse.png",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\mouse.png"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\splashscreenbreaction.xml",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\splashscreenbreaction.xml"
     },
     {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_drawer.png",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_drawer.png"
+    },
+    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\default_profilepic.jpg",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\default_profilepic.jpg"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\ic_chat_bubble_white_24dp.png",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_chat_bubble_white_24dp.png"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi-v4\\abc_ic_star_half_black_36dp.png",

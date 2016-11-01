@@ -9,7 +9,7 @@
         <item
             android:id="@+id/navigation_item_2"
             android:icon="@drawable/home"
-            android:title="results" />
+            android:title="Results" />
       <!--
         <item
             android:id="@+id/navigation_item_3"
@@ -17,9 +17,17 @@
             android:title="@string/hamburger_item3" />
             -->
         <item
+            android:id="@+id/navigation_item_3"
+            android:icon="@drawable/home"
+            android:title="Gallery" />
+        <item
             android:id="@+id/navigation_item_4"
             android:icon="@drawable/home"
-            android:title="some shit" />
+            android:title="Contacts" />
+        <item
+            android:id="@+id/navigation_item_5"
+            android:icon="@drawable/home"
+            android:title="About us" />
     </group>
 
 

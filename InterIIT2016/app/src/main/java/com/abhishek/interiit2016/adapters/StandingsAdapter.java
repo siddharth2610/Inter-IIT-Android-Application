@@ -6,12 +6,15 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.abhishek.interiit2016.R;
+import com.abhishek.interiit2016.model.ItemObject;
 import com.abhishek.interiit2016.model.ScheduleDTO;
 import com.abhishek.interiit2016.model.StandingsDTO;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -21,50 +24,74 @@ public class StandingsAdapter extends RecyclerView.Adapter<StandingsAdapter.Vers
     Boolean isHomeList = false;
     Context context;
     OnItemClickListener clickListener;
+    private int flag;
     private List<StandingsDTO> standingsDTOList;
-
+    private List<ItemObject> itemObjects;
     public StandingsAdapter(Context context,List<StandingsDTO> standingsDTOList){
         isHomeList=true;
         this.context=context;
         this.standingsDTOList=standingsDTOList;
     }
+    public StandingsAdapter(List<ItemObject> itemObjects, int flag){
+        isHomeList=false;
+        this.flag=flag;
+        this.itemObjects=itemObjects;
+    }
     @Override
     public VersionViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        if (isHomeList){
+        if (isHomeList == true){
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.standings_list_item, parent, false);
             VersionViewHolder viewHolder = new VersionViewHolder(view);
             return viewHolder;
         }
         else {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.standings_list_item, parent, false);
-            VersionViewHolder viewHolder = new VersionViewHolder(view);
-            return viewHolder;
+            if(flag == 1){
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.team_list_item, parent, false);
+                VersionViewHolder viewHolder = new VersionViewHolder(view);
+                return viewHolder;
+            }
+            else if (flag == 2){
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sports_list_item, parent, false);
+                VersionViewHolder viewHolder = new VersionViewHolder(view);
+                return viewHolder;
+            }
+            else {
+                View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.sports_list_item, parent, false);
+                VersionViewHolder viewHolder = new VersionViewHolder(view);
+                return viewHolder;
+            }
         }
     }
 
     @Override
     public void onBindViewHolder(VersionViewHolder versionViewHolder, int i) {
         if (isHomeList) {
-            versionViewHolder.standings_points.setText(standingsDTOList.get(i).getStandings_points());
+            versionViewHolder.standings_points.setText(standingsDTOList.get(i).getpoints());
             versionViewHolder.position.setText(standingsDTOList.get(i).getPosition());
             versionViewHolder.college_name.setText(standingsDTOList.get(i).getCollege_name());
         } else {
-
+            versionViewHolder.college_name.setText(itemObjects.get(i).getName());
+            versionViewHolder.imageView.setImageResource(itemObjects.get(i).getPhoto());
         }
     }
 
     @Override
     public int getItemCount() {
+        if (isHomeList)
         return standingsDTOList == null ? 0 : standingsDTOList.size();
+        else
+            return itemObjects ==  null ? 0 : itemObjects.size();
     }
 
     class VersionViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         TextView position,college_name,standings_points;
+        ImageView imageView;
         public VersionViewHolder(View itemView) {
             super(itemView);
             position=(TextView)itemView.findViewById(R.id.position);
             college_name=(TextView)itemView.findViewById(R.id.college_name);
             standings_points=(TextView)itemView.findViewById(R.id.standings_points);
+            imageView =(ImageView)itemView.findViewById(R.id.cllg_logo);
             if (!isHomeList) {
                 itemView.setOnClickListener(this);
             } else {

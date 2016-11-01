@@ -2,7 +2,10 @@ package com.abhishek.interiit2016.utils;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.support.v7.widget.RecyclerView;
 import android.widget.RelativeLayout;
 
@@ -12,7 +15,22 @@ import com.abhishek.interiit2016.adapters.SimpleRecyclerAdapter;
  * Created by GUNDA ABHISHEK on 23-06-2016.
  */
 public class Utils {
+    public static boolean isInterNetUp(Context ctx) {
+        boolean connected = false;
+        try {
+            ConnectivityManager connectivityManager = (ConnectivityManager) ctx
+                    .getSystemService(Context.CONNECTIVITY_SERVICE);
 
+            NetworkInfo networkInfo = connectivityManager.getActiveNetworkInfo();
+            connected = networkInfo != null && networkInfo.isAvailable() && networkInfo.isConnected();
+            return connected;
+
+
+        } catch (Exception e) {
+            //exception
+        }
+        return connected;
+    }
     public static void setImageFromAssetsForRelativeLayout(RelativeLayout rLayout, Drawable d){
         final int sdk = android.os.Build.VERSION.SDK_INT;
         if(sdk < android.os.Build.VERSION_CODES.JELLY_BEAN) {

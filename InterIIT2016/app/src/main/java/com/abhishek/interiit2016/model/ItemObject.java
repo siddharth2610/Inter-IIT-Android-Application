@@ -10,6 +10,9 @@ public class ItemObject {
         this.name = name;
         this.photo = photo;
     }
+    public ItemObject(String name) {
+        this.name = name;
+    }
 
     public String getName() {
         return name;

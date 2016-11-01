@@ -1,7 +1,11 @@
 [
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_dark.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_bg_message.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_bg_message.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
@@ -13,27 +17,31 @@
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_dark.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_dark.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_dark.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_dark.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_text_light.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_text_light.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\layer.xml",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\layer.xml"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_fab_background.xml"
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_btn_action_ripple.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_btn_action_ripple.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\eight.jpg",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\eight.jpg"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_fab_background.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_fab_background.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_text_cursor_material.xml",
@@ -42,6 +50,18 @@
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_indicator_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_btn_action_disabled.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_btn_action_disabled.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_primary_color.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_primary_color.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_btn_action.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_btn_action.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
@@ -60,10 +80,6 @@
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\four.jpg"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\india.png",
-        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\india.png"
-    },
-    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_textfield_search_material.xml"
     },
@@ -73,19 +89,11 @@
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_light.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_light.xml"
-    },
-    {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_edit_text_material.xml",
@@ -100,10 +108,6 @@
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_item_background_holo_dark.xml"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
-    },
-    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
@@ -112,8 +116,32 @@
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_seekbar_track_material.xml"
     },
     {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background_light.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_plus_signin_btn_icon_light.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_plus_signin_btn_icon_light.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_bg_darkener.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_bg_darkener.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\smooch_btn_send.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\smooch_btn_send.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\credit_background.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\credit_background.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_cab_background_internal_bg.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_cab_background_internal_bg.xml"
+    },
+    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_icon_dark.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_icon_dark.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\p8.jpg",
@@ -129,7 +157,7 @@
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\common_google_signin_btn_text_light.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.3.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.google.android.gms\\play-services-base\\8.4.0\\res\\drawable\\common_google_signin_btn_text_light.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_check_material.xml",
@@ -148,36 +176,48 @@
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_tab_indicator_material.xml"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
-    },
-    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_default_mtrl_shape.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_default_mtrl_shape.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\splash3.jpg",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\splash3.jpg"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
-        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_small_material.xml"
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\iitk.jpg",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\iitk.jpg"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background_white.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\io.smooch\\ui\\3.2.2\\res\\drawable\\background_white.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\design\\23.2.1\\res\\drawable\\design_snackbar_background.xml"
     },
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
-        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\logo.png"
-    },
-    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\logo.png",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\logo.png"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\background.xml",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\drawable\\background.xml"
+    },
+    {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_colored_material.xml",
         "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_small_material.xml",
+        "source": "D:\\InterIIT2016\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.4.0\\res\\drawable\\abc_ratingbar_small_material.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",

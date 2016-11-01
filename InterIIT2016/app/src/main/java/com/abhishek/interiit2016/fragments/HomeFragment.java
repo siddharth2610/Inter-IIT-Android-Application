@@ -19,6 +19,7 @@ import android.widget.RelativeLayout;
 
 import com.abhishek.interiit2016.R;
 import com.abhishek.interiit2016.activities.ResultsActivity;
+import com.abhishek.interiit2016.activities.Sports;
 import com.abhishek.interiit2016.activities.Standings;
 import com.abhishek.interiit2016.activities.Teams;
 import com.etiennelawlor.imagegallery.library.activities.FullScreenImageGalleryActivity;
@@ -100,6 +101,13 @@ public class HomeFragment extends Fragment implements ImageGalleryAdapter.ImageT
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(getActivity(),ResultsActivity.class);
+                startActivity(intent);
+            }
+        });
+        fixtures.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Sports.class);
                 startActivity(intent);
             }
         });

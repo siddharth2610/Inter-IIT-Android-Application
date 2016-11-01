@@ -1,52 +1,54 @@
 package com.abhishek.interiit2016.activities;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 import com.abhishek.interiit2016.R;
 import com.abhishek.interiit2016.adapters.GridListAdapter;
+import com.abhishek.interiit2016.adapters.StandingsAdapter;
 import com.abhishek.interiit2016.model.ItemObject;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Teams extends AppCompatActivity {
-
+    StandingsAdapter adapter;
+    List<ItemObject> itemObjects =new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_teams);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-        final List<ItemObject> rowListItem = getAllItemList();
-        GridLayoutManager gridLayout = new GridLayoutManager(Teams.this, 2);
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(Teams.this);
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(gridLayout);
-        GridListAdapter adapter = new GridListAdapter(Teams.this,rowListItem);
+        recyclerView.setLayoutManager(linearLayoutManager);
+        for (int i =0;i<10 ; i++){
+            itemObjects.add(new ItemObject("IIT KANPUR",R.drawable.iitk));
+        }
+        adapter = new StandingsAdapter(itemObjects,1);
         recyclerView.setAdapter(adapter);
+        adapter.SetOnItemClickListener(new StandingsAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(View view, int position) {
+                Intent intent =new Intent(Teams.this,Sports.class);
+                intent.putExtra("CollegeName",itemObjects.get(position).getName());
+                startActivity(intent);
+            }
+        });
+
+
     }
 
-    private List<ItemObject> getAllItemList() {
-        List<ItemObject> allItems = new ArrayList<>();
-        allItems.add(new ItemObject("Badminton", R.drawable.india));
-        allItems.add(new ItemObject("Cricket", R.drawable.india));
-        allItems.add(new ItemObject("Aquatics", R.drawable.india));
-        allItems.add(new ItemObject("BasketBall", R.drawable.india));
-        allItems.add(new ItemObject("Football", R.drawable.india));
-        allItems.add(new ItemObject("TableTennis", R.drawable.india));
-        allItems.add(new ItemObject("Coco", R.drawable.india));
-        allItems.add(new ItemObject("VolleyBall", R.drawable.india));
-        allItems.add(new ItemObject("game1", R.drawable.india));
-        allItems.add(new ItemObject("game2", R.drawable.india));
-        allItems.add(new ItemObject("game3", R.drawable.india));
-        return allItems;
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -62,10 +64,7 @@ public class Teams extends AppCompatActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
+        //noinspection SimplifiableIfStatemen
 
         return super.onOptionsItemSelected(item);
     }

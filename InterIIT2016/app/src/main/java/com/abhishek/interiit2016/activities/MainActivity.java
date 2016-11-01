@@ -1,6 +1,7 @@
 package com.abhishek.interiit2016.activities;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.GridLayoutManager;
@@ -12,16 +13,56 @@ import android.view.View;
 
 import com.abhishek.interiit2016.R;
 import com.abhishek.interiit2016.adapters.GridListAdapter;
+import com.abhishek.interiit2016.gcmservices.GCMRegistrationIntentService;
+import com.abhishek.interiit2016.loader.PandaLoadingView;
 import com.abhishek.interiit2016.model.ItemObject;
+import com.google.android.gms.common.ConnectionResult;
+//import com.google.android.gms.common.;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import io.smooch.core.User;
+import io.smooch.ui.ConversationActivity;
+
+//import io.smooch.core.User;
+//import io.smooch.ui.ConversationActivity;
 
 public class MainActivity extends NavDrawerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getLayoutInflater().inflate(R.layout.activity_main,mContentFrame);
+//        int resultCode= GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
+//
+//        if (ConnectionResult.SUCCESS!=resultCode){
+//            //checking the type of error
+//            if (GooglePlayServicesUtil.isUserRecoverableError(resultCode)){
+//                GooglePlayServicesUtil.showErrorNotification(resultCode, getApplicationContext());
+//            }
+//            else
+//            {
+//                // Empty state - Can't show notifications, because Can't access Google Play Services
+//            }
+//        }
+//        else {
+            Intent intent =new Intent(this,GCMRegistrationIntentService.class);
+            startService(intent);
+
+        FloatingActionButton floatingActionButton =(FloatingActionButton)findViewById(R.id.fab);
+        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                User.getCurrentUser().setFirstName("student");
+                User.getCurrentUser().setLastName("interIIT");
+                User.getCurrentUser().setEmail("abhigun@iitk.ac.in");
+                ConversationActivity.show(MainActivity.this);
+            }
+        });
+
+//        PandaLoadingView mview= new PandaLoadingView();
+//        mview.show(getSupportFragmentManager(), "");
+
         final List<ItemObject> rowListItem = getAllItemList();
         GridLayoutManager gridLayout = new GridLayoutManager(MainActivity.this, 3);
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
@@ -38,8 +79,8 @@ public class MainActivity extends NavDrawerActivity {
 
             }
         });
-    }
 
+    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
