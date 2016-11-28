@@ -2,13 +2,22 @@ package com.abhishek.interiit2016.utils;
 
 import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
+import android.app.Activity;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.support.v7.widget.RecyclerView;
+import android.util.DisplayMetrics;
+import android.util.Log;
+import android.view.Gravity;
+import android.view.LayoutInflater;
+import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
+import com.abhishek.interiit2016.R;
 import com.abhishek.interiit2016.adapters.SimpleRecyclerAdapter;
 
 /**
@@ -50,5 +59,27 @@ public class Utils {
         objectAnimator.setDuration(500);
         animatorSet.playSequentially(objectAnimator);
         animatorSet.start();
+    }
+    public static float functionNormalize(int max, int min, int value) {
+        int intermediateValue = max - min;
+        value -= intermediateValue;
+        float var = Math.abs((float)value/(float)intermediateValue);
+        return Math.abs((float)value/(float)intermediateValue);
+    }
+    public static void showCustomToast(Context context,String message,int duration){
+        LayoutInflater inflater = ((Activity)context).getLayoutInflater();
+        View layout = inflater.inflate(R.layout.custom_toast, null);
+        TextView text = (TextView) layout.findViewById(R.id.custom_toast_txv);
+        text.setText(message);
+        DisplayMetrics displaymetrics = new DisplayMetrics();
+        ((Activity)context).getWindowManager().getDefaultDisplay().getMetrics(displaymetrics);
+        int width = displaymetrics.widthPixels;
+        Log.v("width", "W:" + width);
+        Toast toast = new Toast(context.getApplicationContext());
+        toast.setGravity(Gravity.BOTTOM|Gravity.FILL_HORIZONTAL, 0, 0);
+        //toast.setGravity(Gravity.BOTTOM,0,0);
+        toast.setDuration(duration);
+        toast.setView(layout);
+        toast.show();
     }
 }

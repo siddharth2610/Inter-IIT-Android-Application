@@ -1,11 +1,15 @@
 [
     {
-        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_standings.xml",
-        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_standings.xml"
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_contacts.xml",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_contacts.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_results.xml",
         "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_results.xml"
+    },
+    {
+        "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_standings.xml",
+        "source": "D:\\InterIIT2016\\app\\src\\main\\res\\menu\\menu_standings.xml"
     },
     {
         "merged": "D:\\InterIIT2016\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_teams.xml",

@@ -67,7 +67,7 @@ public class StandingsAdapter extends RecyclerView.Adapter<StandingsAdapter.Vers
     public void onBindViewHolder(VersionViewHolder versionViewHolder, int i) {
         if (isHomeList) {
             versionViewHolder.standings_points.setText(standingsDTOList.get(i).getpoints());
-            versionViewHolder.position.setText(standingsDTOList.get(i).getPosition());
+            versionViewHolder.position.setText(String.valueOf(i+1));
             versionViewHolder.college_name.setText(standingsDTOList.get(i).getCollege_name());
         } else {
             versionViewHolder.college_name.setText(itemObjects.get(i).getName());

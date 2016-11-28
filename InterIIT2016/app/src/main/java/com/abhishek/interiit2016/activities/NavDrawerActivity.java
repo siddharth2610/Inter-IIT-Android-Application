@@ -66,7 +66,6 @@ public class NavDrawerActivity extends AppCompatActivity {
 
         mNavigationView = (NavigationView) findViewById(R.id.nav_view);
         mContentFrame = (FrameLayout) findViewById(R.id.nav_contentframe);
-        setDefaultImage();
         mNavigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(MenuItem menuItem) {
@@ -80,6 +79,10 @@ public class NavDrawerActivity extends AppCompatActivity {
                         return true;
                     case R.id.navigation_item_2:
                         intent =new Intent(NavDrawerActivity.this,Points.class);
+                        startActivity(intent);
+                        return true;
+                    case R.id.navigation_item_4:
+                        intent =new Intent(NavDrawerActivity.this,Contacts.class);
                         startActivity(intent);
                         return true;
                     default:
@@ -103,37 +106,7 @@ public class NavDrawerActivity extends AppCompatActivity {
         Menu menu = mNavigationView.getMenu();
         menu.getItem(mCurrentSelectedPosition).setChecked(true);
     }
-    private void setDefaultImage() {
-        View headerLayout = mNavigationView.getHeaderView(0);
 
-        ImageView profilePic = (ImageView) headerLayout.findViewById(R.id.profilepic);
-        profilePic.setImageBitmap(getCircleBitmap(BitmapFactory.decodeResource(getResources(),
-                R.drawable.default_profilepic)));
-        profilePic.getLayoutParams().height = 150;
-        profilePic.getLayoutParams().width = 150;
-    }
-    private Bitmap getCircleBitmap(Bitmap bitmap) {
-        final Bitmap output = Bitmap.createBitmap(bitmap.getWidth(),
-                bitmap.getHeight(), Bitmap.Config.ARGB_8888);
-        final Canvas canvas = new Canvas(output);
-
-        final int color = Color.RED;
-        final Paint paint = new Paint();
-        final Rect rect = new Rect(0, 0, bitmap.getWidth(), bitmap.getHeight());
-        final RectF rectF = new RectF(rect);
-
-        paint.setAntiAlias(true);
-        canvas.drawARGB(0, 0, 0, 0);
-        paint.setColor(color);
-        canvas.drawOval(rectF, paint);
-
-        paint.setXfermode(new PorterDuffXfermode(PorterDuff.Mode.SRC_IN));
-        canvas.drawBitmap(bitmap, rect, rect, paint);
-
-        bitmap.recycle();
-
-        return output;
-    }
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);

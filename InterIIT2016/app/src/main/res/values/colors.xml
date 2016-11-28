@@ -10,7 +10,8 @@
     <!--Pink 700-->
     <color name="accent_700">#C2185B</color>
     <color name="black_trans80">#e8ece6</color>
-
+    <!-- show case color -->
+    <color name="custom_showcase_bg">#b9002153</color>
     <color name="indicator_unselected">#4D000000</color>
     <color name="white">#FFFFFF</color>
     <color name="greyish_white">#f2f2f2</color>
@@ -58,4 +59,7 @@
     <color name="Smooch_userMessageBorder">@color/Smooch_accentDark</color>
     <color name="Smooch_userMessageFailedBackground">@color/Smooch_accentLight</color>
     <color name="Smooch_userMessageText">#ffffff</color>
+
+    <color name="card_bg">#EBEBEB</color>
+    <color name="card_outline">#D0D0CE</color>
 </resources>

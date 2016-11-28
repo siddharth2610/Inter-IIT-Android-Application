@@ -66,15 +66,16 @@ public class SimpleRecyclerAdapter extends RecyclerView.Adapter<SimpleRecyclerAd
             versionViewHolder.time.setText(scheduleDTOList.get(i).getEvent_time());
             versionViewHolder.day.setText(scheduleDTOList.get(i).getEvent_date());
         } else {
-            versionViewHolder.team1.setText(resultDTOList.get(i).getTeam1());
-            versionViewHolder.team2.setText(resultDTOList.get(i).getTeam2());
-            versionViewHolder.venue.setText(resultDTOList.get(i).getVenue());
-            versionViewHolder.details.setText(resultDTOList.get(i).getMatch_details());
-            versionViewHolder.time.setText(resultDTOList.get(i).getEvent_time());
-            versionViewHolder.day.setText(resultDTOList.get(i).getEvent_date());
-            versionViewHolder.score1.setText(resultDTOList.get(i).getTeam1_score());
-            versionViewHolder.score2.setText(resultDTOList.get(i).getTeam2_score());
-            versionViewHolder.summary.setText(resultDTOList.get(i).getMatch_summary());
+                versionViewHolder.team1.setText(resultDTOList.get(i).getTeam1());
+                versionViewHolder.team2.setText(resultDTOList.get(i).getTeam2());
+                versionViewHolder.venue.setText(resultDTOList.get(i).getVenue());
+                versionViewHolder.details.setText(resultDTOList.get(i).getMatch_details());
+                versionViewHolder.time.setText(resultDTOList.get(i).getEvent_time());
+                versionViewHolder.day.setText(resultDTOList.get(i).getEvent_date());
+                versionViewHolder.score1.setText(resultDTOList.get(i).getTeam1_score());
+                versionViewHolder.score2.setText(resultDTOList.get(i).getTeam2_score());
+                versionViewHolder.summary.setText(resultDTOList.get(i).getMatch_summary());
+
         }
         if (i>previousposition){
             Utils.animatelist(versionViewHolder,true);

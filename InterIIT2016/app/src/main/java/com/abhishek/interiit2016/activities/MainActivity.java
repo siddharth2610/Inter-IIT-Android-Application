@@ -1,6 +1,8 @@
 package com.abhishek.interiit2016.activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -16,6 +18,9 @@ import com.abhishek.interiit2016.adapters.GridListAdapter;
 import com.abhishek.interiit2016.gcmservices.GCMRegistrationIntentService;
 import com.abhishek.interiit2016.loader.PandaLoadingView;
 import com.abhishek.interiit2016.model.ItemObject;
+import com.abhishek.interiit2016.utils.APIConstants;
+import com.github.amlcurran.showcaseview.ShowcaseView;
+import com.github.amlcurran.showcaseview.targets.ViewTarget;
 import com.google.android.gms.common.ConnectionResult;
 //import com.google.android.gms.common.;
 
@@ -32,7 +37,10 @@ public class MainActivity extends NavDrawerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getLayoutInflater().inflate(R.layout.activity_main,mContentFrame);
+        getLayoutInflater().inflate(R.layout.activity_main, mContentFrame);
+        final SharedPreferences sharedPreferences = getSharedPreferences(APIConstants.USER_SPORT_SELECTED, Context.MODE_PRIVATE);
+        String Sport = sharedPreferences.getString("Sport","");
+        String Gender = sharedPreferences.getString("Gender","Male");
 //        int resultCode= GooglePlayServicesUtil.isGooglePlayServicesAvailable(getApplicationContext());
 //
 //        if (ConnectionResult.SUCCESS!=resultCode){
@@ -46,10 +54,20 @@ public class MainActivity extends NavDrawerActivity {
 //            }
 //        }
 //        else {
-            Intent intent =new Intent(this,GCMRegistrationIntentService.class);
-            startService(intent);
+
+        // ---------------------------GCM Registration comment have to check it ------------------------------------------------------
+//            Intent intent =new Intent(this,GCMRegistrationIntentService.class);
+//            startService(intent);
 
         FloatingActionButton floatingActionButton =(FloatingActionButton)findViewById(R.id.fab);
+        new ShowcaseView.Builder(this)
+                .withNewStyleShowcase()
+                .setTarget(new ViewTarget(R.id.fab, this))
+                .setContentTitle("title")
+                .setContentText("title")
+                .hideOnTouchOutside()
+                .singleShot(42)
+                .build();
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -74,7 +92,10 @@ public class MainActivity extends NavDrawerActivity {
             @Override
             public void onItemClick(View view, int position) {
                 Intent intent =new Intent(MainActivity.this,HomeActivity.class);
-                intent.putExtra("eventName",rowListItem.get(position).getName());
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("Sport",rowListItem.get(position).getName());
+                editor.commit();
+                //intent.putExtra("eventName",rowListItem.get(position).getName());
                 startActivity(intent);
 
             }

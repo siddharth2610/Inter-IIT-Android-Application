@@ -16,7 +16,14 @@ public interface DataService {
     public void getEvents(
             @Query("gender") String gen, Callback<APIResponse> cb
     );
-
+    @GET(APIConstants.API_GET_SCHDULE)
+    public void geteventschedule(
+            @Query("sport") String sport,@Query("gender") String gender,@Query("day") String day, Callback<APIResponse> cb
+    );
+    @GET(APIConstants.API_GET_RESULTS)
+    public void getresults(
+            @Query("sport") String sport,@Query("gender") String gender,@Query("day") String day, Callback<APIResponse> cb
+    );
     /*@GET(APIConstants.API_ANALYTICS_DATA)
     public void getStatisticsOfEvent(
             @Query("enddate") String ed, @Query("eventids") String idarray, @Query("startdate") String sd, Callback<APIResponse> cb
