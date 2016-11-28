@@ -50,8 +50,8 @@ public class GridListAdapter extends RecyclerView.Adapter<GridListAdapter.Versio
         public VersionViewHolder(View itemView) {
             super(itemView);
             itemView.setOnClickListener(this);
-            EventName =(TextView) itemView.findViewById(R.id.item_text);
-            EventPhoto=(ImageView)itemView.findViewById(R.id.item_image);
+            EventName =(TextView) itemView.findViewById(R.id.college_name);
+            EventPhoto=(ImageView)itemView.findViewById(R.id.cllg_logo);
 
         }
 

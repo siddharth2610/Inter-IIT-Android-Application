@@ -2,30 +2,27 @@
 <resources>
 
     <string-array name="home_activities">
-        <item>FAB &amp; Toolbar Animation</item>
-        <item>Transparent Toolbar Test</item>
-        <item>Navigation Drawer</item>
-        <item>Toolbar Animation with Image</item>
-        <item>Material Style Tabs</item>
-        <item>Card View Toolbar</item>
-        <item>Quick Return Pattern</item>
-        <item>Reveal Animation</item>
-        <item>Gmail Style List</item>
-
-
+        <item>IIT KANPUR</item>
+        <item>IIT CHENNAI</item>
+        <item>IIT DELHI</item>
+        <item>IIT KHARAGPUR</item>
+        <item>IIT BOMBAY</item>
+        <item>IIT ROORKEE</item>
+        <item>IIT MANDI</item>
+        <item>IIT BHUBANESHWAR</item>
+        <item>IIT GOWHATI</item>
+        <item>IIT ROPAR</item>
+        <item>IIT HYDERABAD</item>
+        <item>IIT BHU</item>
+        <item>IIT DHANBAD</item>
+        <item>IIT KANPUR</item>
+        <item>IIT KANPUR</item>
+        <item>IIT KANPUR</item>
+        <item>IIT KANPUR</item>
     </string-array>
-
-    <string-array name="home_activities_subtitle">
-        <item>G+ like on scroll hide animation</item>
-        <item>Overlaid transparent Toolbar</item>
-        <item>Material Design drawer with scrim</item>
-        <item>Using the new Support Design Library</item>
-        <item>Tab strip with Design Support Lib</item>
-        <item>Nested Toolbar in card</item>
-        <item>UI Pattern using Design Support Lib</item>
-        <item>Circular Reveal for pre Lollipop</item>
-        <item>Colored list icons</item>
-
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
     </string-array>
 
 </resources>

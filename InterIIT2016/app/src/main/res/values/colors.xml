@@ -10,7 +10,8 @@
     <!--Pink 700-->
     <color name="accent_700">#C2185B</color>
     <color name="black_trans80">#e8ece6</color>
-
+    <!-- show case color -->
+    <color name="custom_showcase_bg">#b9002153</color>
     <color name="indicator_unselected">#4D000000</color>
     <color name="white">#FFFFFF</color>
     <color name="greyish_white">#f2f2f2</color>
@@ -35,5 +36,30 @@
     <color name="deep_orange">#FF5722</color>
     <color name="name_color">#333</color>
 
+    <color name="Smooch_accent">#9200aa</color>
+    <color name="Smooch_accentDark">#76008a</color>
+    <color name="Smooch_accentLight">#be7cca</color>
 
+    <color name="Smooch_backgroundInput">#ffffff</color>
+
+    <color name="Smooch_btnSendHollow">#c0c0c0</color>
+    <color name="Smooch_btnSendHollowBorder">#303030</color>
+
+    <color name="Smooch_header">#989898</color>
+
+    <color name="Smooch_messageDate">@color/Smooch_header</color>
+    <color name="Smooch_messageShadow">#7f999999</color>
+
+    <color name="Smooch_remoteMessageAuthor">@color/Smooch_header</color>
+    <color name="Smooch_remoteMessageBackground">#ffffff</color>
+    <color name="Smooch_remoteMessageBorder">#d9d9d9</color>
+    <color name="Smooch_remoteMessageText">#000000</color>
+
+    <color name="Smooch_userMessageBackground">@color/Smooch_accent</color>
+    <color name="Smooch_userMessageBorder">@color/Smooch_accentDark</color>
+    <color name="Smooch_userMessageFailedBackground">@color/Smooch_accentLight</color>
+    <color name="Smooch_userMessageText">#ffffff</color>
+
+    <color name="card_bg">#EBEBEB</color>
+    <color name="card_outline">#D0D0CE</color>
 </resources>

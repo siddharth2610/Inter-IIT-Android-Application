@@ -2,7 +2,9 @@ package com.abhishek.interiit2016.activities;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.design.widget.TabLayout;
@@ -27,6 +29,7 @@ import com.abhishek.interiit2016.adapters.SimpleRecyclerAdapter;
 import com.abhishek.interiit2016.fragments.HomeFragment;
 import com.abhishek.interiit2016.fragments.ScheduleFragment;
 import com.abhishek.interiit2016.model.VersionModel;
+import com.abhishek.interiit2016.utils.APIConstants;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,9 +39,12 @@ public class HomeActivity extends NavDrawerActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        getLayoutInflater().inflate(R.layout.activity_home,mContentFrame);
+        getLayoutInflater().inflate(R.layout.activity_home, mContentFrame);
         final ViewPager viewPager = (ViewPager) findViewById(R.id.tabanim_viewpager);
         setupViewPager(viewPager);
+        SharedPreferences sharedPreferences = sharedPreferences = getSharedPreferences(APIConstants.USER_SPORT_SELECTED, Context.MODE_PRIVATE);
+        getSupportActionBar().setTitle(sharedPreferences.getString("Sport","")+" - "+sharedPreferences.getString("Gender","Male"));
+
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tabanim_tabs);
         tabLayout.setupWithViewPager(viewPager);
 
@@ -47,6 +53,7 @@ public class HomeActivity extends NavDrawerActivity {
             public void onTabSelected(TabLayout.Tab tab) {
 
                 viewPager.setCurrentItem(tab.getPosition());
+
             }
 
             @Override

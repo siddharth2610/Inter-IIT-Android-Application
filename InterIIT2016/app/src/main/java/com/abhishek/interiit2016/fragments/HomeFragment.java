@@ -1,11 +1,14 @@
 package com.abhishek.interiit2016.fragments;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.graphics.Palette;
 import android.text.TextUtils;
@@ -19,8 +22,11 @@ import android.widget.RelativeLayout;
 
 import com.abhishek.interiit2016.R;
 import com.abhishek.interiit2016.activities.ResultsActivity;
+import com.abhishek.interiit2016.activities.Sports;
 import com.abhishek.interiit2016.activities.Standings;
 import com.abhishek.interiit2016.activities.Teams;
+import com.abhishek.interiit2016.utils.APIConstants;
+import com.afollestad.materialdialogs.MaterialDialog;
 import com.etiennelawlor.imagegallery.library.activities.FullScreenImageGalleryActivity;
 import com.etiennelawlor.imagegallery.library.activities.ImageGalleryActivity;
 import com.etiennelawlor.imagegallery.library.adapters.FullScreenImageGalleryAdapter;
@@ -41,6 +47,8 @@ public class HomeFragment extends Fragment implements ImageGalleryAdapter.ImageT
     private Drawable color;
     private PaletteColorType paletteColorType;
     String[] images = new String[10];
+    SharedPreferences sharedPreferences;
+    String gender;
     //private RelativeLayout results,fixtures,standings,teams,photos;
     public HomeFragment() {
     }
@@ -71,6 +79,8 @@ public class HomeFragment extends Fragment implements ImageGalleryAdapter.ImageT
         final RelativeLayout standings= (RelativeLayout) view.findViewById(R.id.standings);
         RelativeLayout teams= (RelativeLayout) view.findViewById(R.id.teams);
         RelativeLayout photos= (RelativeLayout) view.findViewById(R.id.photos);
+        sharedPreferences = this.getActivity().getSharedPreferences(APIConstants.USER_SPORT_SELECTED, Context.MODE_PRIVATE);
+        gender = sharedPreferences.getString("Gender","Male");
         photos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,6 +113,33 @@ public class HomeFragment extends Fragment implements ImageGalleryAdapter.ImageT
                 startActivity(intent);
             }
         });
+        fixtures.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), Sports.class);
+                startActivity(intent);
+            }
+        });
+//        FloatingActionButton floatingActionButton =(FloatingActionButton)view.findViewById(R.id.fab3);
+//        floatingActionButton.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                new MaterialDialog.Builder(getActivity())
+//                        .title("Select gender")
+//                        .items(R.array.gender)
+//                        .itemsCallbackSingleChoice(2, new MaterialDialog.ListCallbackSingleChoice() {
+//                            @Override
+//                            public boolean onSelection(MaterialDialog dialog, View view, int which, CharSequence text) {
+//                                SharedPreferences.Editor editor = sharedPreferences.edit();
+//                                editor.putString("Gender",text.toString());
+//                                editor.commit();
+//                                return true; // allow selection
+//                            }
+//                        })
+//                        .positiveText("Submit")
+//                        .show();
+//            }
+//        });
         return view;
     }
 
